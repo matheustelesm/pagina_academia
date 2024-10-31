@@ -3,28 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="parallax"></div>
+    <main class="container">
         <header>
-            <img src="imagens/logo.png">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Program</a>
-                <a href="#">Service</a>
-                <a href="#">About</a>
-                <a href="#">Community</a>
-            </nav>
-            <a href="">Join Now</a>
+            <div class="global">
+                <div class="logo">
+                    <img src="imagens/logo.png">
+                </div>
+                <div class="menu">
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="#">Program</a>
+                        <a href="#">Service</a>
+                        <a href="#">About</a>
+                        <a href="#">Community</a>
+                    </nav>
+                </div>
+                <div class="button">
+                    <a href="">Join Now</a>
+                </div>
+            </div>
+            
         </header>
 
         <section class="hero-section">
             <article class="hero-text">
                 <small>BEST FITNESS IN THE TOWN</small>
-                <h2>MAKE YOUR BODY SHAPE</h2>
-                <p>Unleash your potential and embark on a journey towards a stronger, fitter, and more confident you. Sign up for "Make Your Body Shape" now and witness the incredible transformation your body is capable of!</p>
-                <a href="">Get Started</a>
+                <h2>MAKE YOUR <br>BODY SHAPE</h2>
+                <p>Unleash your potential and embark on a journey towards a stronger,<br> fitter, and more confident you. Sign up for "Make Your Body Shape" now <br>and witness the incredible transformation your body is capable of!</p>
+                <button>Get Started</button>
             </article>
             <aside class="hero-image">
                 <img src="imagens/header.png" alt="Bodybuilder with dumbbells">
@@ -32,50 +43,49 @@
             
         </section>
 
-        <section>
+        <section class="secao2">
             <h2>EXPLORE OUR PROGRAM</h2>
-            <img src="icons/seta_esquerda.png">
-            <img src="icons/seta_direita.png">
-            <div>
+            
+            <div class="card-container">
                 <div class="card">
-                    <div class="card-icon"><img src="icons/biceps.png"></div>
-                    <h3 class="card-title">Strength</h3>
-                    <p class="card-description">Embrace the essence of strength as we delve into its various dimensions: physical, mental, and emotional.</p>
-                    <a href="#" class="card-button">Join Now</a>
+                    <div class="icone"><img src="icons/biceps.png"></div>
+                    <h3 class="titulo-card">Strength</h3>
+                    <p class="descricao">Embrace the essence of strength as we delve into its various dimensions: physical, mental, and emotional.</p>
+                    <a href="#" class="card-button">Join Now &#10141;</a>
                 </div>
                 <div class="card">
                     <div class="icone"><img src="icons/levantamento.png"></div>
                     <h3 class="titulo-card">Physical Fitness</h3>
                     <p class="descricao">It encompasses a range of activities that improve health, strength, flexibility, and overall well-being.</p>
-                    <a href="#" class="card-button">Join Now</a>
+                    <a href="#" class="card-button">Join Now &#10141;</a>
                 </div>
                 <div class="card">
                     <div class="icone"><img src="icons/perdaGordura.png"></div>
                     <h3 class="titulo-card">Fat Loss</h3>
                     <p class="descricao">Through a combination of workout routines and expert guidance, we'll empower you to reach your goals.</p>
-                    <a href="#" class="card-button">Join Now</a>
+                    <a href="#" class="card-button">Join Now &#10141;</a>
                 </div>
                 <div class="card">
                     <div class="card-icon"><img src="icons/ganhodepeso.png"></div>
                     <h3 class="titulo-card">Weight Gain</h3>
                     <p class="descricao">Designed for individuals, our program offers an effective approach to gaining weight in a sustainable manner.</p>
-                    <a href="#" class="card-button">Join Now</a>
+                    <a href="#" class="card-button">Join Now &#10141;</a>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="section-container">
+        <section class="section-container">
                 <div class="image-container">
                     <img src="imagens/class-1.jpg" alt="Main Fitness Class Image" class="main-image">
                     <img src="imagens/class-2.jpg" alt="Overlay Image" class="overlay-image">
                 </div>
                 <div class="text-container">
-                    <h2>THE CLASS YOU WILL GET HERE</h2>
-                    <p>Led by our team of expert and motivational instructors, "The Class You Will Get Here" is a high-energy, results-driven session that combines a perfect blend of cardio, strength training, and functional exercises. Each class is carefully curated to keep you engaged and challenged, ensuring you never hit a plateau in your fitness endeavors.</p>
-                    <a href="#" class="cta-button">Book A Class</a>
+                    <h2>THE CLASS YOU WILL<br>GET HERE</h2>
+                    <p>Led by our team of expert and motivational instructors, "The Class You<br> Will Get Here" is a high-energy, results-driven session that combines a<br> perfect blend of cardio, strength training, and functional exercises.<br> Each class is carefully curated to keep you engaged and challenged,<br> ensuring you never hit a plateau in your fitness endeavors.</p>
+                    <button>Book A Class</button>
                 </div>
-            </div>
+                
+            
         </section>
 
         <section>
@@ -154,36 +164,35 @@
 
         </section>
 
-        <footer>
-            <div>
-                <img src="imagens/logo.png">
-                <p>Take the first step towards a healthler, stronger you with our unbeatable princing plans. Let´s sweat, achieve, and conquer together!</p>
-                <img src="">
-                <img src="">
-                <img src="">
-            </div>
-            <div>
-                <h3>Company</h3>
-                <p>Business</p>
-                <p>Franchise</p>
-                <p>Partnership</p>
-                <p>Network</p>
-            </div>
-            <div>
-                <h3>About Us</h3>
-                <p>Blogs</p>
-                <p>Security</p>
-                <p>Careers</p>
-            </div>
-            <div>
-                <h3>Contact</h3>
-                <p>Contact Us</p>
-                <p>Privacy Policy</p>
-                <p>Terms & Conditions</p>
-                <p>BMI Calculator</p>
-            </div>
-        </footer>
-
-    </div>
+    </main>
+    <footer>
+        <div>
+            <img src="imagens/logo.png">
+            <p>Take the first step towards a healthler, stronger you with our unbeatable princing plans. Let´s sweat, achieve, and conquer together!</p>
+            <img src="">
+            <img src="">
+            <img src="">
+        </div>
+        <div>
+            <h3>Company</h3>
+            <p>Business</p>
+            <p>Franchise</p>
+            <p>Partnership</p>
+            <p>Network</p>
+        </div>
+        <div>
+            <h3>About Us</h3>
+            <p>Blogs</p>
+            <p>Security</p>
+            <p>Careers</p>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p>Contact Us</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>BMI Calculator</p>
+        </div>
+    </footer>
 </body>
 </html>

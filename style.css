@@ -10,8 +10,6 @@
     --cor4: #d79447;
     --cor5: #d1d5db;
     --cor6: #ffffff;
-
-    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: "Poppins", sans-serif;
 }
 
@@ -19,11 +17,259 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fonte-destaque);
 }
 
-header {
+.global{
+    max-width: 1080px;
     display: flex;
-    justfy-content
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+body{
+    background-color: var(--cor0);
+    color: var(--cor5);
+}
+
+header{
+    background-color: var(--cor0);
+    width: 100%;
+    padding: 15px;
+}
+
+.logo,.button{
+    width: 25%;
+}
+
+.logo img{
+    width: 170px;
+    margin-left: -30px;
+}
+
+.menu{
+    width: 50%;
+}
+
+.menu nav a{
+    color: var(--cor6);
+    text-decoration: none;
+    padding-right: 30px;
+    font-family: var(--fonte-destaque);
+    position: relative;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, var(--cor3), var(--cor4));
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    transition: width 0.5s;
+}
+.menu nav a:hover::after{
+    width: 40px;
+}
+
+.button a{
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+    background-color: var(--cor3);
+    padding:10px;
+    border-radius: 5px;
+    color: var(--cor6);
+}
+.button a:hover{
+    background-color: var(--cor4);
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-destaque);
+    background-color: var(--cor0);
+}
+
+.hero-text{
+    margin: 10px;
+    padding: 21%;
+    margin-bottom: 10px;
+    color: var(--cor5);
+    margin-top: -15em;
+    margin-left: -10%;
+}
+
+
+.hero-text small{
+    color: var(--cor4);
+    font-size: 19px;
+
+}
+
+.hero-text h2{
+    font-size: 70px;
+}
+
+.hero-text button{
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+    background-color: var(--cor3);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--cor5);
+    border: none;
+    margin-top: 20px;
+}
+
+.hero-text button:hover{
+    background-color: var(--cor4);
+}
+
+.hero-section img{
+    width: auto;
+    height: 580px;
+    margin-right: 210px;
+    margin-left: -13em;
+    margin-bottom: 10em;
+}
+
+.secao2 {
+    color: var(--cor5);
+    background-color: var(--cor0);
+    font-family: var(--fonte-destaque);
+}
+
+.secao2 h2{
+    text-align: center;
+    padding: 10px;
+    color: var(--cor5);
+    font-size: 39px;
+    margin-top: -5em;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--cor1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 270px; 
+    height: 290px;
+    margin: 30px;
+    margin-bottom: 10em;
+}
+
+.icone img {
+    display: flex;
+    width: auto;
+    height: auto;
+    
+}
+
+.titulo-card {
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.descricao {
+    text-align: left;
+    font-size: 14px;
+    color: var(--cor6);
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.card-button {
+    text-align: start;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.card:hover{
+    background-color: var(--cor2);
+    border: 1px solid var(--cor3);
+    transition: 0.5s;
+}
+
+.card-button:hover {
+    color: var(--cor3);
+}
+
+.image-container {
+    position: relative; /* Permite o posicionamento absoluto dos filhos */
+    width: 500px; /* Defina a largura do contêiner */
+    height: 300px; /* Defina a altura do contêiner */
+    margin: auto; /* Centraliza o contêiner na página */
+    margin-right: 2em;
+}
+
+.main-image {
+    width: 100%; /* Ajusta a imagem de fundo para preencher o contêiner */
+    height: 100%; /* Ajusta a altura da imagem de fundo */
+    object-fit: cover; /* Mantém a proporção da imagem de fundo */
+    border-radius: 10px;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: -15px; /* Posiciona a imagem na parte inferior */
+    left: -90px;   /* Posiciona a imagem à esquerda */
+    width: 200px; /* Defina a largura da imagem sobreposta */
+    height: auto; /* Defina a altura da imagem sobreposta */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+.section-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 17rem;
+    margin-bottom: 10em;
+}
+
+.text-container{
+    text-align: left;
     
 
 }
+.text-container h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-container button{
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+    background-color: var(--cor3);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--cor5);
+    border: none;
+    margin-top: 50px;
+}
+
+.section-container button:hover{ 
+    background-color: var(--cor4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
