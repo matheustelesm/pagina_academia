@@ -82,6 +82,7 @@ header{
     border-radius: 5px;
     color: var(--cor6);
 }
+
 .button a:hover{
     background-color: var(--cor4);
 }
@@ -131,7 +132,7 @@ header{
 
 .hero-section img{
     width: auto;
-    height: 580px;
+    height: 590px;
     margin-right: 210px;
     margin-left: -13em;
     margin-bottom: 10em;
@@ -162,10 +163,11 @@ header{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 270px; 
-    height: 290px;
+    width: 300px; 
+    height: 310px;
     margin: 30px;
     margin-bottom: 10em;
+    transition: transform 0.3s ease;
 }
 
 .icone img {
@@ -200,6 +202,7 @@ header{
     background-color: var(--cor2);
     border: 1px solid var(--cor3);
     transition: 0.5s;
+    transform: scale(1.1);
 }
 
 .card-button:hover {
@@ -207,27 +210,27 @@ header{
 }
 
 .image-container {
-    position: relative; /* Permite o posicionamento absoluto dos filhos */
-    width: 500px; /* Defina a largura do contêiner */
-    height: 300px; /* Defina a altura do contêiner */
-    margin: auto; /* Centraliza o contêiner na página */
+    position: relative; 
+    width: 500px; 
+    height: 300px; 
     margin-right: 2em;
+    
 }
 
 .main-image {
-    width: 100%; /* Ajusta a imagem de fundo para preencher o contêiner */
-    height: 100%; /* Ajusta a altura da imagem de fundo */
-    object-fit: cover; /* Mantém a proporção da imagem de fundo */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     border-radius: 10px;
 }
 
 .overlay-image {
     position: absolute;
-    bottom: -15px; /* Posiciona a imagem na parte inferior */
-    left: -90px;   /* Posiciona a imagem à esquerda */
-    width: 200px; /* Defina a largura da imagem sobreposta */
-    height: auto; /* Defina a altura da imagem sobreposta */
-    border-radius: 10px; /* Bordas arredondadas */
+    bottom: -15px; 
+    left: -90px;   
+    width: 200px; 
+    height: auto; 
+    border-radius: 10px; 
 }
 .section-container{
     display: flex;
@@ -235,6 +238,7 @@ header{
     justify-content: center;
     margin-right: 17rem;
     margin-bottom: 10em;
+    margin-right: -3em;
 }
 
 .text-container{
@@ -300,43 +304,40 @@ header{
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); 
 }
 
-
-/* Estilo individual dos elementos filhos */
 .elemento_filho {
     flex: 1;
     display: flex;
     align-items: center;
-    margin: 0 10px; /* Espaçamento entre elementos */
+    margin: 0 10px; 
     padding: 10px;
     border-radius: 10px;
 }
 
-/* Estilo para o ícone dentro do elemento filho */
+
 .elemento_filho img {
     width: 40px;
     height: 40px;
-    margin-right: 15px; /* Espaço entre o ícone e o texto */
+    margin-right: 15px; 
 }
 
-/* Contêiner de texto para alinhar o título e parágrafo em coluna */
 .texto {
     display: flex;
-    flex-direction: column; /* Empilha o h3 e o p */
-    align-items: flex-start; /* Alinha o texto à esquerda */
+    flex-direction: column; 
+    align-items: flex-start; 
     justify-content: center;
 }
 
 .texto h3 {
     font-size: 18px;
     margin: 0;
-    color: var(--cor5); /* Ajuste a cor conforme necessário */
+    color: var(--cor5); 
     font-weight: bold;
 }
 
 .texto p {
     font-size: 14px;
     margin: 5px 0 0;
-    color: var(--cor5); /* Ajuste a cor conforme necessário */
+    color: var(--cor5); 
 }
 
 #secao4{
@@ -394,6 +395,7 @@ header{
     margin: 10px;
     margin-top: 2px;
 }
+
 hr{
     margin: 10px;
 }
@@ -598,3 +600,6 @@ hr{
     color: var(--cor4);
 }
 
+button {
+    cursor: pointer;
+}
